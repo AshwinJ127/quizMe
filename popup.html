@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMe!</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1>QuizMe!</h1>
+        <button id="full-page-btn">Full Page</button>
+        <button id="highlighted-text-btn">Highlighted Text</button>
+    </div>
+
+    <div id="loading-indicator" style="display: none;">
+        <div class="spinner"></div>
+        <p>Generating quiz questions with AI...</p>
+        <p id="status-message"><small>Analyzing text...</small></p>
+        <p><small>(This may take a few moments)</small></p>
+    </div>
+
+    <div id="quiz-container" style="display: none;">
+        <h2 id="question-text"></h2>
+        <div id="answers"></div>
+        <button id="submit-btn" disabled>Submit Answer</button>
+        <button id="next-btn" style="display: none;">Next</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
