@@ -1,3 +1,5 @@
+import { API_KEY } from './config.js';
+
 document.getElementById("full-page-btn").addEventListener("click", () => {
     getTextFromPage("fullPage");
 });
@@ -137,8 +139,6 @@ function sendTextToServer(text) {
 
 // Function to generate questions using Gemini API
 async function generateQuestionsWithGemini(text) {
-    // API key for Gemini API
-    const API_KEY = process.env.API_KEY;
     if (!API_KEY) {
         throw new Error("API key is not set in the environment!");
     }
