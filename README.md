@@ -48,7 +48,7 @@ QuizMe! is a Chrome extension that generates interactive, multiple‑choice quiz
 Open your terminal and run:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/quizMe.git
+git clone https://github.com/AshwinJ127/quizMe.git
 cd quizMe
 ```
 ### Step 2: Configure Your API Key
